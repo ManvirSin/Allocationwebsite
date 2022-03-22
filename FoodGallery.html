@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title> UOB - Gallery </title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body style="background-color:#C0C0C0"></body>
+    <?php include "$_SERVER[DOCUMENT_ROOT]/desi_spice/php/header.php";?>
+    <nav>
+        <label class="logo">University Of Bradford</label>
+        <ul>
+            <li><a href="Mtfirstpage.html">Home</a></li>
+            <li><a href="FoodGallery.html">Gallery</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+    <br/>
+    <br/>
+    <br/>
+    <!-- Random image slideshow -->
+    <body onLoad="showRandom()">
+        <script type="text/javascript">
+        function randomImageSelect(){
+            var number = Math.floor((Math.random()*4)+1);
+            var file = "../img/FrontPageImage";
+            file = file.concat(number.toString(),".jpg");
+            document.getElementById("MainImage").src = file;
+        }
+        function showRandom(){
+            var t = setInterval(randomImageSelect,2000);
+        }
+        </script>
+        <img id="MainImage" src="../img/FrontPageImage1.jpg" width="100%" height="60% alt="One of our delicious platters"\>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- Footer -->
+        <div class="footer_parallax" onclick="remove_class()">
+            <div class="on_footer_parallax">
+                <link rel="stylesheet" href="../css/main.css" />
+                <p>&copy; <?php echo strftime("%Y", time()); ?> <span>UNIVERSITY OF BRADFORD</span>.&nbsp; Making Knowledge Work </p>    
+            </div>
+        </div>
+    </body>
+</html>
