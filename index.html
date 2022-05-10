@@ -1,0 +1,199 @@
+
+<!DOCTYPE HTML>
+<html lang="zxx">
+
+<head>
+	<title>FYP Allocation System - Login</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Triple Forms Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- Meta tag Keywords -->
+
+	<!-- css files -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext"
+	 rel="stylesheet">
+	<!-- //web-fonts -->
+	<style>
+		/*关闭图标*/
+		.close {
+			position: relative;
+
+			width: 40px;
+			height: 40px;
+			background:transparent;
+			cursor: pointer;
+			box-sizing: border-box;
+		}
+		.close:hover::before, .close:hover::after {
+			background: red;
+		}
+		.close:before {
+			position: absolute;
+			content: '';
+			width: 1px;
+			height: 25px;
+			background: whitesmoke;
+			transform: rotate(45deg);
+			top: -3px;
+			left: 11px;
+		}
+		.close:after{
+			content: '';
+			position: absolute;
+			width: 1px;
+			height: 25px;
+			background: whitesmoke;
+			transform: rotate(-45deg);
+			top: -3px;
+			left: 11px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main-bg">
+		<!-- title -->
+		<h1> Users Login Page</h1>
+		<body>
+		<div  style="float: right" class="close" onclick=window.location.href='../../homepage/Homepage/HomePage.html'></div>
+		</body>
+		<!-- //title -->
+		<div class="sub-main-amum-mk">
+			<div class="image-style">
+
+			</div>
+			<!-- vertical tabs -->
+			<div class="vertical-tab">
+				<div id="section1" class="section-amum-mkls">
+					<input type="radio" name="sections" id="option1" checked>
+					<label for="option1" class="icon-left-amum-mkpvt"><span class="fa fa-user-circle" aria-hidden="true"></span> Student Login</label>
+					<article>
+						<form action="../Backend/StudentLoginfunction.php" method="post">
+							<h3 class="legend">Login Here</h3>
+							<div class="input">
+								<span class="fa fa-envelope-o" aria-hidden="true"></span>
+								<input type="email" placeholder="Email" name="email" required />
+							</div>
+							<div class="input">
+								<span class="fa fa-key" aria-hidden="true"></span>
+								<input type="password" placeholder="Password" name="password" required />
+							</div>
+							<button type="submit" class="btn submit" name="login">Login</button>
+							<a href="#" class="bottom-text-amum-mkls">Forgot Password?</a>
+							<h3>&nbsp;</h3>
+							<h3>&nbsp;</h3>
+							<h3>&nbsp;</h3>
+
+
+						</form>
+					</article>
+				</div>
+				<div id="section2" class="section-amum-mkls">
+					<input type="radio" name="sections" id="option2">
+					<label for="option2" class="icon-left-amum-mkpvt"><span class="fa fa-pencil-square" aria-hidden="true"></span>Student Register</label>
+					<article>
+						<form action="../Backend/Signup.php" method="post">
+							<h3 class="legend">Register Here</h3>
+							<div class="input">
+								<span class="fa fa-user-o" aria-hidden="true"></span>
+								<input type="text" placeholder="Username-first_name" name="firstname" required />
+							</div>
+							<div class="input">
+								<span class="fa fa-user-o" aria-hidden="true"></span>
+								<input type="text"  placeholder="Username-last_name" name="lastname" required />
+							</div>
+							<div class="input">
+								<span class="fa fa-key" aria-hidden="true"></span>
+								<input type="email" placeholder="Email" name="Email" required />
+							</div>
+							<div class="input">
+								<span class="fa fa-key" aria-hidden="true"></span>
+								<input type="password" placeholder="Password" name="Password" required />
+							</div>
+							<button type="submit" name="ADD" class="btn submit">Register</button>
+							<h3>&nbsp;</h3>
+							<h3>&nbsp;</h3>
+
+						</form>
+					</article>
+				</div>
+				<div id="section3" class="section-amum-mkls">
+					<input type="radio" name="sections" id="option3">
+					<label for="option3" class="icon-left-amum-mkpvt"><span class="fa fa-user-circle" aria-hidden="true"></span>Supervisor Login</label>
+					<article>
+						<form action="../Backend/SupervisorLoginfunction.php" method="post">
+							<h3 class="legend">Login Here</h3>
+							<div class="input">
+								<span class="fa fa-envelope-o" aria-hidden="true"></span>
+								<input type="email" placeholder="Email" name="email" required />
+							</div>
+							<div class="input">
+								<span class="fa fa-key" aria-hidden="true"></span>
+								<input type="password" placeholder="Password" name="password" required />
+							</div>
+							<button type="submit" class="btn submit" name="login">Login</button>
+							<a href="#" class="bottom-text-amum-mkls">Forgot Password?</a>
+							<h3>&nbsp;</h3>
+							<h3>&nbsp;</h3>
+							<h3>&nbsp;</h3>
+
+						</form>
+					</article>
+				</div>
+				<div id="section4" class="section-amum-mkls">
+					<input type="radio" name="sections" id="option4" checked>
+					<label for="option4" class="icon-left-amum-mkpvt"><span class="fa fa-user-circle" aria-hidden="true"></span> Admin Login</label>
+					<article>
+						<form action="../Backend/Adminloginfunction.php" method="post">
+							<h3 class="legend">Login Here</h3>
+							<div class="input">
+								<span class="fa fa-envelope-o" aria-hidden="true"></span>
+								<input type="email" placeholder="Email" name="email" required />
+							</div>
+							<div class="input">
+								<span class="fa fa-key " aria-hidden="true"></span>
+								<input type="password" placeholder="Password" name="password" required />
+							</div>
+							<button type="submit" class="btn submit" name="login">Login</button>
+							<a href="#" class="bottom-text-amum-mkls">Forgot Password?</a>
+							<h3>&nbsp;</h3>
+							<h3>&nbsp;</h3>
+							<h3>&nbsp;</h3>
+
+						</form>
+					</article>
+				</div>
+			</div>
+
+
+			<!-- //vertical tabs -->
+			<div class="clear"></div>
+		</div>
+		<!-- copyright -->
+		<div class="copyright">
+			<h2>&copy; 2019 Triple Forms. All rights reserved.
+			</h2>
+		</div>
+		<!-- //copyright -->
+	</div>
+
+</body>
+
+</html>
